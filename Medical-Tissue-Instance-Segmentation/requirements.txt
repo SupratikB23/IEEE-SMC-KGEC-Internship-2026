@@ -1,0 +1,20 @@
+# Deep Learning for Medical Tissue Image Analysis
+# IEEE SMC Student Branch Chapter, KGEC - Research Internship Programme 2026
+#
+# Install with:  pip install -r requirements.txt
+#
+# On Kaggle and Colab, torch, numpy, scipy, scikit-image and opencv are already
+# present; only transformers normally needs installing.
+
+# --- model and training ----------------------------------------------------
+torch>=2.0
+torchvision
+transformers>=4.38          # loads the frozen Phikon-v2 backbone
+
+# --- image processing ------------------------------------------------------
+opencv-python-headless      # stain unmixing, tiling, morphology
+scikit-image>=0.21          # watershed
+scipy>=1.10                 # connected components, morphology
+
+# --- numerics --------------------------------------------------------------
+numpy>=1.24
